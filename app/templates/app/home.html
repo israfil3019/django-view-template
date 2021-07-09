@@ -1,4 +1,33 @@
-This is template view!
+Hello World!
+
 <br />
 <br />
-{{first_name}}
+
+My school is {{ title | upper }}.
+
+<br />
+<br />
+
+{{ request.method | title }}
+
+<br />
+<br />
+
+{% if my_list %} List is not empty {% endif %}
+
+<br />
+<br />
+
+{% for num in my_list %} {% if num == 3 %}
+<li>{{ dict1 }}</li>
+{% else %}
+<li>{{ num }}</li>
+{% endif %} {% endfor %} <br />{{ dict1|title }}
+
+<br /><br />
+
+{{ my_list.0 }}
+
+<br /><br />
+{# This is a single line comment #} {% comment %} This is a multi line comment,
+you can't see it on the page! {% endcomment %}
